@@ -1,223 +1,224 @@
-# Basic-solidity-basic-practice-questions
-My journey of learning Solidity step by step through 
-practice contracts covering variables, arrays, mappings, structs, events, modifiers, and more.
+Basic Solidity Practice Questions
 
-1. Variables & Functions (10)
+My journey of learning Solidity step by step through practice contracts covering variables, arrays, mappings, structs, events, modifiers, and more.
 
-Store & retrieve uint
 
-Update string with two functions (setName / getName)
+1. Variables & Functions (10 Questions)
 
-Boolean setter/getter
+Write a Solidity function to store and retrieve an unsigned integer (uint).
 
-Increment / Decrement counter
+Write two functions setName(string memory _name) and getName() to update and retrieve a string variable.
 
-Multiply two numbers
+Create a boolean variable with a setter and getter function.
 
-Divide two numbers with require (no divide by 0)
+Implement functions to increment and decrement a counter.
 
-Modulo of two numbers
+Write a function to multiply two numbers and return the result.
 
-Compare two numbers (return bigger)
+Write a function to divide two numbers with a require statement to avoid division by zero.
 
-Concatenate two strings
+Write a function to calculate the modulo of two numbers.
 
-Square / cube of a number
+Write a function that compares two numbers and returns the bigger one.
 
-2. Conditionals (if/else, require, assert) (10)
+Write a function to concatenate two strings.
 
-Check even or odd
+Write a function to calculate the square and cube of a number.
 
-Check positive/negative
+2. Conditionals (if/else, require, assert) (10 Questions)
 
-Grade system (marks → grade)
+Write a function to check if a number is even or odd.
 
-Min/Max of 3 numbers
+Write a function to check if a number is positive or negative.
 
-Check voting eligibility (age >= 18)
+Implement a grade system: given marks, return grade (A/B/C/D/F).
 
-Check password (string match)
+Write a function to find the minimum or maximum of three numbers.
 
-Simple login (bool check)
+Write a function to check voting eligibility (age ≥ 18).
 
-Require example (number > 100)
+Write a function to check a password by matching strings.
 
-Assert example (number != 0)
+Implement a simple login system using a boolean variable.
 
-Custom error example
+Write an example using require to ensure a number is greater than 100.
 
-3. Arrays (10)
+Write an example using assert to ensure a number is not zero.
 
-Store numbers in array
+Write a function to throw a custom error under certain conditions.
 
-Get element by index
+3. Arrays (10 Questions)
 
-Update element in array
+Create an array and store numbers in it.
 
-Delete element
+Write a function to get an element by its index.
 
-Dynamic push/pop
+Write a function to update an element at a specific index.
 
-Find length of array
+Write a function to delete an element from the array.
 
-Sum of all elements
+Use push and pop to add and remove elements dynamically.
 
-Find max in array
+Write a function to find the length of the array.
 
-Find min in array
+Write a function to calculate the sum of all elements in the array.
 
-Search element in array
+Write a function to find the maximum element in the array.
 
-4. Mappings (10)
+Write a function to find the minimum element in the array.
 
-Address → balance mapping
+Write a function to search for a specific element in the array.
 
-String → uint mapping (name → marks)
+4. Mappings (10 Questions)
 
-Add & update mapping values
+Create a mapping from address to uint to store balances.
 
-Delete mapping entry
+Create a mapping from string to uint (name → marks).
 
-Check if key exists (bool return)
+Write functions to add and update mapping values.
 
-Simple phone book
+Write a function to delete a mapping entry.
 
-Nested mapping (address → (string → uint))
+Write a function to check if a key exists in a mapping (return boolean).
 
-Voting count mapping
+Create a simple phone book using mapping.
 
-Whitelist mapping (true/false)
+Create a nested mapping: address → (string → uint).
 
-Blacklist mapping
+Write a function to count votes using mapping.
 
-5. Structs (10)
+Create a whitelist mapping (true / false).
 
-Student struct (id, name, marks)
+Create a blacklist mapping.
 
-Add multiple students in array
+5. Structs (10 Questions)
 
-Update student marks
+Define a Student struct with fields id, name, and marks.
 
-Retrieve student by id
+Write a function to add multiple students into an array.
 
-Employee struct (id, name, salary)
+Write a function to update student marks.
 
-Add/update employee
+Write a function to retrieve a student by ID.
 
-Product struct (id, name, price)
+Define an Employee struct with fields id, name, and salary.
 
-Add/update product
+Write functions to add and update employee data.
 
-Car struct (brand, model, year)
+Define a Product struct with fields id, name, and price.
 
-Store multiple cars
+Write functions to add and update product details.
 
-6. Modifiers (5)
+Define a Car struct with fields brand, model, and year.
 
-OnlyOwner modifier
+Write a function to store multiple cars in an array.
 
-OnlyPositiveNumber modifier
+6. Modifiers (5 Questions)
 
-OnlyStudent modifier
+Write an OnlyOwner modifier.
 
-MinBalance modifier
+Write an OnlyPositiveNumber modifier.
 
-FunctionCounter modifier
+Write an OnlyStudent modifier.
 
-7. Events (5)
+Write a MinBalance modifier.
 
-Emit event on deposit
+Write a FunctionCounter modifier.
 
-Emit event on withdrawal
+7. Events (5 Questions)
 
-Emit event on student added
+Emit an event whenever Ether is deposited.
 
-Emit event on marks updated
+Emit an event whenever Ether is withdrawn.
 
-Emit event on ownership transfer
+Emit an event whenever a student is added.
 
-8. Payable & Ether (10)
+Emit an event whenever a student’s marks are updated.
 
-Deposit function
+Emit an event whenever ownership is transferred.
 
-Withdraw function
+8. Payable & Ether (10 Questions)
 
-Check balance function
+Write a deposit function to accept Ether.
 
-Transfer ether to another address
+Write a withdraw function to send Ether.
 
-Fallback function example
+Write a function to check contract balance.
 
-Receive function example
+Write a function to transfer Ether to another address.
 
-Track deposits with event
+Implement a fallback function example.
 
-Limit deposit amount (require < 1 ETH)
+Implement a receive function example.
 
-Simple donation contract
+Track deposits using events.
 
-Withdraw onlyOwner
+Limit deposit amount using require (< 1 ETH).
 
-9. Inheritance & OOP (10)
+Write a simple donation contract.
 
-Parent → Child contract (simple function inherit)
+Write a withdraw function restricted to the owner.
 
-Multilevel inheritance (Grandparent → Parent → Child)
+9. Inheritance & OOP (10 Questions)
 
-Function overriding
+Create a Parent → Child contract and inherit a simple function.
 
-Virtual & override example
+Create a multilevel inheritance (Grandparent → Parent → Child).
 
-Abstract contract
+Demonstrate function overriding.
 
-Interface example
+Provide an example using virtual and override.
 
-Multiple inheritance
+Implement an abstract contract.
 
-Call parent function from child
+Implement an interface example.
 
-Base contract with constructor
+Demonstrate multiple inheritance.
 
-Derived contract with super keyword
+Call a parent function from a child contract.
 
-10. Mini Projects (20)
+Write a base contract with constructor.
 
-Simple Calculator
+Use the super keyword in a derived contract.
 
-Simple Bank (multi user)
+10. Mini Projects (20 Questions)
 
-Voting system
+Create a Simple Calculator contract.
 
-To-do list
+Create a Simple Bank contract (multi-user).
 
-Auction (basic, highest bidder wins)
+Create a Voting System contract.
 
-Crowdfunding (basic target based)
+Create a To-Do List contract.
 
-Lottery (pick winner randomly with block data)
+Create a Basic Auction (highest bidder wins).
 
-Token (ERC20 simplified)
+Create a Basic Crowdfunding contract (target-based).
 
-NFT (ERC721 simplified)
+Create a Lottery contract (pick winner randomly using block data).
 
-Certificate generator (store hash of doc)
+Create a simplified ERC20 Token contract.
 
-Exam system (students attempt, store marks)
+Create a simplified ERC721 NFT contract.
 
-Library management (books issue/return)
+Create a Certificate Generator (store document hash).
 
-Attendance system
+Create an Exam System (students attempt and store marks).
 
-Expense tracker
+Create a Library Management contract (issue/return books).
 
-E-commerce (add products, buy)
+Create an Attendance System contract.
 
-Simple chat log (store messages)
+Create an Expense Tracker contract.
 
-Ownership transfer system
+Create an E-commerce contract (add products and buy).
 
-Land registry (store land info)
+Create a Simple Chat Log contract (store messages).
 
-Multi-sig wallet (basic approval)
+Create an Ownership Transfer System contract.
 
-Escrow contract
+Create a Land Registry contract (store land information).
+
+Create a Multi-sig Wallet contract (basic approval).
+
+Create an Escrow Contract.
