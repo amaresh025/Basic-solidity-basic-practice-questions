@@ -46,3 +46,4 @@ contract Lottery {
         return players;  // get all players
     } 
 }
+
