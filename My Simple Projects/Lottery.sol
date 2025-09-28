@@ -27,7 +27,7 @@ contract Lottery {
     function pickWinner() public {
         require(block.timestamp >= deadline, "Lottery not ended!"); // only after deadline
         require(msg.sender == owner, "You are not owner");          // only owner
-        require(players.length > 0);                                // at least 1 player
+        require(players.length > 0, "at least 1 player");                                // at least 1 player
 
         // random index calculation
         uint index = uint(
@@ -46,4 +46,5 @@ contract Lottery {
         return players;  // get all players
     } 
 }
+
 
