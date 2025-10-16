@@ -13,3 +13,4 @@ contract AddressBalanceMap {
         return balance;            // return the updated balance
     }
 }
+
