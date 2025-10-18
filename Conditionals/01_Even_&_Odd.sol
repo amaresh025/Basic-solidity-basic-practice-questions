@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-// Contract to check if a number is Even or Odd
 contract EvenorOdd {
 
     // Function to check whether a given number is even or odd
@@ -17,3 +16,4 @@ contract EvenorOdd {
         }
     }
 }
+
